@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Bitcoin</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SozoXchange</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- start intro section -->
+      <section class="text-light p-5 text-center text-sm-start" id="home">
+          <div class="container py-4">
+              <div class="d-sm-flex align-item-center justify-content-between py-5">
+                  <div>
+                      <h1>Why choose SozoXchange?</h1>
+
+                      <p>
+                        We provide risk-free investment opportunities in highly sought-after cryptocurrencies as well as various forms of the US dollar.
+                      </p>
+                    <p>
+                      <ul>
+                          <li>
+                            <em>Quick</em> Payments
+                          </li>
+                          <li>
+                            0% Risk
+                          </li>
+                      </ul>
+                    </p>
+                    <a class="btn btn-lg btn-dark contat" href="#con">Contact Us</a>
+                  </div>
+                <a href="#con">
+                  <img src="img/first.png" id="van" class="img-fluid" width="500">
+                </a>
+              </div>
+          </div>
+      </section>
+      <!-- end of intro section -->
+
+<div class="card mb-3 mx-auto carou" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/img/btc.png" class="img-fluid rounded-start" alt="BTC_img">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">BITCOIN</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card mb-3 mx-auto carou" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/img/aud.png" class="img-fluid rounded-start" alt="aud_png">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">AUSTRALIAN $</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3 mx-auto carou" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/img/ussd.png" class="img-fluid rounded-start" alt="aud_png">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">UNITED STATES $</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- start contact -->
+      <section id="con" class="container py-5 bg-dark text-light p-5">
+          <div class="container py-5">
+              <div class="align-items-center text-center">
+                   <h1><b>We Offer 100% Customer Support</b></h1>
+                  <h5>
+                      <em><b>We give 100% customer support, we guide on how to make changes and also have a 24/7 <em><b>customer support</b></em></b></em>
+                  </h5>
+                  <br>
+                  <h4>Talk To Us For Free</h4>
+                  <h2>080-<a href="https://wa.me/qr/GFCPZG5UH3MYH1">CLICK-HERE </a></h2>
+              </div>
+          </div>
+      </section>
+<!-- end contact -->
+
+
+<!-- Include Bootstrap JS and jQuery (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Simulate fetching live Bitcoin price
+    function fetchBitcoinPrice() {
+        // Replace this with your actual API call to fetch Bitcoin price
+        const mockPrice = 42000; // Mocked Bitcoin price in this example
+        document.getElementById("price").textContent = `Current Price: $${mockPrice}`;
+    }
+
+    // Fetch initial price
+    fetchBitcoinPrice();
+
+    // Refresh price on button click
+    document.querySelector(".btn").addEventListener("click", fetchBitcoinPrice);
+</script>
+</body>
+</html>
