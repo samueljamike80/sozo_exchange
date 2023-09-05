@@ -2,6 +2,19 @@ body {
     background-color: #D5AB09;
 }
 
+.yellow-gold {
+
+}
+
 .carou {
     margin-top: 0px;
 }
+
+#con {
+    margin-bottom: 75px;
+}
+
+.footer {
+            padding: 20px 0;
+            text-align: center;
+        }
